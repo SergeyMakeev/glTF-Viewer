@@ -30,7 +30,7 @@ else()
 endif()
 
 add_subdirectory(extern/SDL)
-target_link_libraries(gltfViewer SDL2)
+target_link_libraries(gltfViewer SDL2-static)
 
 
 
