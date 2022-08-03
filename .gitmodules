@@ -1,0 +1,18 @@
+[submodule "extern/cgltf"]
+	path = extern/cgltf
+	url = https://github.com/jkuhlmann/cgltf.git
+[submodule "extern/bgfx"]
+	path = extern/bgfx
+	url = https://github.com/bkaradzic/bgfx.git
+[submodule "extern/meshoptimizer"]
+	path = extern/meshoptimizer
+	url = https://github.com/zeux/meshoptimizer.git
+[submodule "extern/bx"]
+	path = extern/bx
+	url = https://github.com/bkaradzic/bx.git
+[submodule "extern/bimg"]
+	path = extern/bimg
+	url = https://github.com/bkaradzic/bimg.git
+[submodule "extern/SDL"]
+	path = extern/SDL
+	url = https://github.com/libsdl-org/SDL.git
