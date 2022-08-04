@@ -7,6 +7,8 @@ project(gltfViewer)
 include(src/Sources.cmake)
 add_executable(gltfViewer ${VIEWER_SOURCE_FILES})
 
+
+
 if(MSVC)
   set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT gltfViewer)
   target_compile_options(gltfViewer PRIVATE /W3 /WX)
@@ -20,4 +22,13 @@ target_link_libraries(gltfViewer SDL2-static)
 
 add_subdirectory(bgfx.cmake)
 target_link_libraries(gltfViewer bgfx-static)
+
+add_subdirectory(extern/meshoptimizer)
+target_link_libraries(gltfViewer meshoptimizer)
+
+target_include_directories(gltfViewer PRIVATE extern/cgltf)
+
+
+
+
 
